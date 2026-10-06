@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>دعوت‌نامه نمایشگاه تجهیزات و مهندسی پزشکی</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+*{
+
+    box-sizing:border-box;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+body{
+
+    font-family:"Vazirmatn",Tahoma,sans-serif;
+
+    background:#dfe7ea;
+
+    color:#182b34;
+
+}
+
+/* ================= PAGE ================= */
+
+.page{
+
+    width:210mm;
+
+    height:297mm;
+
+    background:#fff;
+
+    margin:25px auto;
+
+    position:relative;
+
+    overflow:hidden;
+
+    page-break-after:always;
+
+    box-shadow:0 12px 40px rgba(0,0,0,.15);
+
+}
+
+.page::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(28,151,171,.15);
+
+    top:-250px;
+
+    left:-180px;
+
+}
+
+.page::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:330px;
+
+    height:330px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(28,151,171,.12);
+
+    bottom:-210px;
+
+    right:-150px;
+
+}
+
+.content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100%;
+
+    padding:48px;
+
+}
+
+/* ================= COLORS ================= */
+
+:root{
+
+    --dark:#16313c;
+
+    --blue:#198da5;
+
+    --light:#eaf6f8;
+
+    --gray:#718088;
+
+    --line:#dce7ea;
+
+}
+
+/* ================= HEADER ================= */
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:var(--dark);
+
+    font-weight:700;
+
+    font-size:14px;
+
+}
+
+.brand-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:var(--blue);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:23px;
+
+}
+
+.eyebrow{
+
+    color:var(--blue);
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
+
+    text-align:center;
+
+}
+
+/* ================= PAGE 1 ================= */
+
+.page1{
+
+    background:
+
+    radial-gradient(circle at 80% 20%,#edf9fb 0%,transparent 35%),
+
+    linear-gradient(145deg,#fff,#f3fafb);
+
+}
+
+.hero{
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.medical-logo{
+
+    width:105px;
+
+    height:105px;
+
+    border:2px solid var(--blue);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--blue);
+
+    font-size:52px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 0 0 12px rgba(25,141,165,.05);
+
+}
+
+.hero h1{
+
+    font-size:39px;
+
+    line-height:1.65;
+
+    color:var(--dark);
+
+    font-weight:800;
+
+    margin:18px 0;
+
+}
+
+.hero h1 span{
+
+    color:var(--blue);
+
+}
+
+.hero-text{
+
+    max-width:620px;
+
+    color:var(--gray);
+
+    line-height:2.3;
+
+    font-size:15px;
+
+}
+
+.invite-badge{
+
+    margin-top:45px;
+
+    padding:13px 40px;
+
+    border:1px solid var(--blue);
+
+    border-radius:50px;
+
+    color:var(--blue);
+
+    font-weight:600;
+
+}
+
+.bottom-label{
+
+    position:absolute;
+
+    bottom:38px;
+
+    left:48px;
+
+    right:48px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    border-top:1px solid var(--line);
+
+    padding-top:13px;
+
+    font-size:10px;
+
+    color:#87949a;
+
+}
+
+/* ================= PAGE 2 ================= */
+
+.page-title{
+
+    text-align:center;
+
+    color:var(--dark);
+
+    font-size:31px;
+
+    font-weight:800;
+
+    margin-top:40px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:var(--gray);
+
+    font-size:13px;
+
+    margin-top:10px;
+
+    margin-bottom:45px;
+
+}
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.info-card{
+
+    min-height:170px;
+
+    background:#f6fafb;
+
+    border:1px solid var(--line);
+
+    border-radius:23px;
+
+    padding:27px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.info-icon{
+
+    width:53px;
+
+    height:53px;
+
+    border-radius:16px;
+
+    background:var(--light);
+
+    color:var(--blue);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 16px;
+
+    font-size:23px;
+
+}
+
+.info-card small{
+
+    color:#859299;
+
+    font-size:11px;
+
+    margin-bottom:7px;
+
+}
+
+.info-card strong{
+
+    color:var(--dark);
+
+    font-size:16px;
+
+}
+
+.event-note{
+
+    margin:40px auto;
+
+    max-width:650px;
+
+    background:var(--dark);
+
+    color:white;
+
+    padding:24px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    line-height:2;
+
+    font-size:13px;
+
+}
+
+/* ================= PAGE 3 ================= */
+
+.location{
+
+    max-width:700px;
+
+    margin:35px auto;
+
+    background:var(--dark);
+
+    color:white;
+
+    border-radius:28px;
+
+    padding:38px;
+
+    box-shadow:0 20px 40px rgba(22,49,60,.16);
+
+}
+
+.location-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:28px;
+
+}
+
+.location-icon{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:17px;
+
+    background:rgba(255,255,255,.1);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:25px;
+
+}
+
+.location h2{
+
+    font-size:21px;
+
+    color:#7dd0df;
+
+}
+
+.location-address{
+
+    font-size:16px;
+
+    line-height:2.6;
+
+    color:#f1f7f8;
+
+}
+
+.location-details{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+
+}
+
+.detail{
+
+    background:rgba(255,255,255,.07);
+
+    border-radius:15px;
+
+    padding:17px;
+
+}
+
+.detail span{
+
+    display:block;
+
+    font-size:10px;
+
+    color:#86b8c2;
+
+    margin-bottom:7px;
+
+}
+
+.detail strong{
+
+    font-size:13px;
+
+}
+
+.access{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#687980;
+
+    font-size:12px;
+
+    line-height:2.2;
+
+}
+
+.map-placeholder{
+
+    max-width:700px;
+
+    height:95px;
+
+    margin:25px auto;
+
+    border:1px dashed #b9cdd2;
+
+    border-radius:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#819096;
+
+    font-size:12px;
+
+    background:#f8fbfc;
+
+}
+
+/* ================= PAGE 4 ================= */
+
+.rules{
+
+    max-width:700px;
+
+    margin:30px auto;
+
+}
+
+.rule{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:16px;
+
+    background:#f7fafb;
+
+    border-radius:17px;
+
+    padding:18px 20px;
+
+    margin-bottom:12px;
+
+    border-right:4px solid var(--blue);
+
+}
+
+.check{
+
+    color:var(--blue);
+
+    font-size:20px;
+
+    font-weight:800;
+
+}
+
+.rule p{
+
+    font-size:13px;
+
+    line-height:2;
+
+    color:#53636a;
+
+}
+
+.closing{
+
+    margin:35px auto 0;
+
+    max-width:700px;
+
+    text-align:center;
+
+    border-top:1px solid var(--line);
+
+    border-bottom:1px solid var(--line);
+
+    padding:27px;
+
+}
+
+.closing h2{
+
+    color:var(--dark);
+
+    font-size:22px;
+
+    margin-bottom:10px;
+
+}
+
+.closing p{
+
+    color:var(--gray);
+
+    font-size:12px;
+
+    line-height:2;
+
+}
+
+.signature{
+
+    text-align:center;
+
+    color:var(--blue);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-top:25px;
+
+}
+
+/* ================= PRINT ================= */
+
+@media print{
+
+    body{
+
+        background:white;
+
+    }
+
+    .page{
+
+        margin:0;
+
+        box-shadow:none;
+
+        width:210mm;
+
+        height:297mm;
+
+    }
+
+    @page{
+
+        size:A4;
+
+        margin:0;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =====================================================
+
+                     PAGE 1
+
+===================================================== -->
+
+<section class="page page1">
+
+<div class="content">
+
+    <div class="brand">
+
+        <div class="brand-icon">⚕</div>
+
+        <span>BIOMEDICAL ENGINEERING</span>
+
+    </div>
+
+    <div class="hero">
+
+        <div class="medical-logo">✚</div>
+
+        <div class="eyebrow">
+
+            SPECIALIZED EXHIBITION
+
+        </div>
+
+        <h1>
+
+            شما به نمایشگاه<br>
+
+            <span>تجهیزات و مهندسی پزشکی</span><br>
+
+            دعوت شده‌اید
+
+        </h1>
+
+        <p class="hero-text">
+
+            با افتخار از شما دعوت می‌شود در این رویداد تخصصی
+
+            حضور یافته و از جدیدترین تجهیزات، فناوری‌ها و
+
+            دستاوردهای حوزه مهندسی پزشکی بازدید فرمایید.
+
+        </p>
+
+        <div class="invite-badge">
+
+            حضور شما، موجب افتخار ماست
+
+        </div>
+
+    </div>
+
+    <div class="bottom-label">
+
+        <span>نمایشگاه تخصصی تجهیزات و مهندسی پزشکی</span>
+
+        <span>INVITATION • 1405</span>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+
+                     PAGE 2
+
+===================================================== -->
+
+<section class="page">
+
+<div class="content">
+
+    <div class="brand">
+
+        <div class="brand-icon">02</div>
+
+        <span>EVENT INFORMATION</span>
+
+    </div>
+
+    <h1 class="page-title">
+
+        اطلاعات رویداد
+
+    </h1>
+
+    <p class="subtitle">
+
+        زمان و مشخصات برگزاری نمایشگاه
+
+    </p>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+
+            <div class="info-icon">▣</div>
+
+            <small>تاریخ برگزاری</small>
+
+            <strong>
+
+                ۲۵ آبان ۱۴۰۵
+
+            </strong>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-icon">◷</div>
+
+            <small>ساعت بازدید</small>
+
+            <strong>
+
+                ۱۰:۰۰ تا ۱۸:۰۰
+
+            </strong>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-icon">⚕</div>
+
+            <small>موضوع رویداد</small>
+
+            <strong>
+
+                تجهیزات و مهندسی پزشکی
+
+            </strong>
+
+        </div>
+
+        <div class="info-card">
+
+            <div class="info-icon">⌂</div>
+
+            <small>محل برگزاری</small>
+
+            <strong>
+
+                مرکز همایش‌های بین‌المللی رازی
+
+            </strong>
+
+        </div>
+
+    </div>
+
+    <div class="event-note">
+
+        <strong>نکته مهم</strong><br>
+
+        لطفاً جهت سهولت ورود و بازدید، حداقل
+
+        ۱۵ دقیقه پیش از شروع برنامه در محل
+
+        برگزاری حضور داشته باشید.
+
+    </div>
+
+</div>
+
+<div class="bottom-label">
+
+    <span>Biomedical Engineering Exhibition</span>
+
+    <span>02 / 04</span>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+
+                     PAGE 3
+
+===================================================== -->
+
+<section class="page">
+
+<div class="content">
+
+    <div class="brand">
+
+        <div class="brand-icon">03</div>
+
+        <span>VENUE & LOCATION</span>
+
+    </div>
+
+    <h1 class="page-title">
+
+        محل برگزاری
+
+    </h1>
+
+    <p class="subtitle">
+
+        مرکز همایش‌های بین‌المللی محمد بن زکریای رازی
+
+    </p>
+
+    <div class="location">
+
+        <div class="location-top">
+
+            <div class="location-icon">
+
+                📍
+
+            </div>
+
+            <h2>
+
+                مرکز همایش‌های بین‌المللی رازی
+
+            </h2>
+
+        </div>
+
+        <p class="location-address">
+
+            تهران، بزرگراه شهید همت،
+
+            جنب برج میلاد،
+
+            دانشگاه علوم پزشکی ایران،
+
+            مرکز همایش‌های بین‌المللی
+
+            محمد بن زکریای رازی
+
+        </p>
+
+        <div class="location-details">
+
+            <div class="detail">
+
+                <span>شهر</span>
+
+                <strong>
+
+                    تهران
+
+                </strong>
+
+            </div>
+
+            <div class="detail">
+
+                <span>محل</span>
+
+                <strong>
+
+                    مرکز همایش‌های بین‌المللی رازی
+
+                </strong>
+
+            </div>
+
+            <div class="detail">
+
+                <span>سالن</span>
+
+                <strong>
+
+                    سالن اصلی
+
+                </strong>
+
+            </div>
+
+            <div class="detail">
+
+                <span>محدوده</span>
+
+                <strong>
+
+                    دانشگاه علوم پزشکی ایران
+
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="map-placeholder">
+
+        📍 محل برگزاری نمایشگاه — مرکز همایش‌های بین‌المللی رازی
+
+    </div>
+
+    <div class="access">
+
+        <strong>دسترسی</strong><br>
+
+        دسترسی از طریق بزرگراه شهید همت و مسیرهای
+
+        منتهی به محدوده برج میلاد و دانشگاه علوم پزشکی ایران
+
+        امکان‌پذیر است.
+
+    </div>
+
+</div>
+
+<div class="bottom-label">
+
+    <span>Razi International Conference Center</span>
+
+    <span>03 / 04</span>
+
+</div>
+
+</section>
+
+<!-- =====================================================
+
+                     PAGE 4
+
+===================================================== -->
+
+<section class="page">
+
+<div class="content">
+
+    <div class="brand">
+
+        <div class="brand-icon">04</div>
+
+        <span>IMPORTANT NOTES</span>
+
+    </div>
+
+    <h1 class="page-title">
+
+        نکات مهم حضور
+
+    </h1>
+
+    <p class="subtitle">
+
+        خواهشمند است موارد زیر را پیش از حضور مطالعه فرمایید.
+
+    </p>
+
+    <div class="rules">
+
+        <div class="rule">
+
+            <div class="check">✓</div>
+
+            <p>
+
+                به منظور حفظ نظم و فضای حرفه‌ای نمایشگاه،
+
+                رعایت شئونات اسلامی و اجتماعی الزامی است.
+
+            </p>
+
+        </div>
+
+        <div class="rule">
+
+            <div class="check">✓</div>
+
+            <p>
+
+                لطفاً با پوشش مناسب و متناسب با فضای علمی،
+
+                دانشگاهی و تخصصی رویداد در نمایشگاه حضور داشته باشید.
+
+            </p>
+
+        </div>
+
+        <div class="rule">
+
+            <div class="check">✓</div>
+
+            <p>
+
+                رعایت نظم و احترام به سایر بازدیدکنندگان،
+
+                غرفه‌داران، کارشناسان و مسئولان نمایشگاه ضروری است.
+
+            </p>
+
+        </div>
+
+        <div class="rule">
+
+            <div class="check">✓</div>
+
+            <p>
+
+                از لمس، جابه‌جایی یا استفاده از تجهیزات
+
+                نمایشگاهی بدون هماهنگی با مسئول غرفه خودداری فرمایید.
+
+            </p>
+
+        </div>
+
+        <div class="rule">
+
+            <div class="check">✓</div>
+
+            <p>
+
+                لطفاً در زمان حضور در سالن، سکوت و نظم محیط
+
+                علمی و تخصصی نمایشگاه را رعایت فرمایید.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="closing">
+
+        <h2>
+
+            منتظر حضور ارزشمند شما هستیم
+
+        </h2>
+
+        <p>
+
+            این رویداد فرصتی برای آشنایی با فناوری‌های نوین،
+
+            تبادل دانش و ایجاد ارتباط میان دانشجویان،
+
+            متخصصان و فعالان حوزه مهندسی پزشکی است.
+
+        </p>
+
+    </div>
+
+    <div class="signature">
+
+        با احترام<br>
+
+        دبیرخانه نمایشگاه تجهیزات و مهندسی پزشکی
+
+    </div>
+
+</div>
+
+<div class="bottom-label">
+
+    <span>THANK YOU FOR JOINING US</span>
+
+    <span>04 / 04</span>
+
+</div>
+
+</section>
+
+</body>
+
+</html>
